@@ -1,0 +1,42 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const allPost = await Astro.glob("../posts/*.md");
+const tags = [...new Set(allPost.map((post) => post.frontmatter.tags).flat())]
+const title = "Índice de etiquetas"
+---
+<Layout title={title}>
+  <div class="tags">
+    {tags.map((tag) =>
+    (<p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  a {
+    color: var(--code-light);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--dark);
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+  }
+
+  .tag {
+    margin: 0.15em;
+    border-radius: .25em;
+    padding: .01em .01em;
+    font-size: .9em;
+    background-color: var(--dark);
+  }
+ 
+  .tag:hover {
+    background-color: var(--code-light);
+  }
+</style>
