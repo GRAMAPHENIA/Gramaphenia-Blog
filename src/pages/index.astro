@@ -1,37 +1,32 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 // import Greeting from '../components/Greeting.jsx';
-const pageTitle = "Hexágono"
+const pageTitle = "Hexágono";
 ---
 
 <Layout title={pageTitle}>
+  <body>
+    <h1>cuatro cientos cuatro</h1>
+    <h3>[un blog de gramaphenia]</h3>
 
-	<body>
-		
-			<h1>cuatro cientos cuatro</h1>
-			<h3>[un blog de gramaphenia]</h3>
-
-		<!-- <Greeting client:load messages={["Hej", "Hallo" , "Hola" , "Habari" ]} /> -->
-		<div class="centro-index">
-			<p>
-			Preparando secciones
-		</p>
-		</div>
-		
-	</body>
+    <!-- <Greeting client:load messages={["HTML", "CSS" , "JS" , "REACT", "NODEJS" ]} /> -->
+    <div class="centro-index">
+      <p>Preparando secciones</p>
+    </div>
+  </body>
 </Layout>
 
 <style>
-	h3 {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 10rem;
-	}
+  h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+  }
 
-	/* CLASES PERSONALIZADAS */
-	.centro-index {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+  /* CLASES PERSONALIZADAS */
+  .centro-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 </style>

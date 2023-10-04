@@ -1,42 +1,65 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 const pageTitle = "Acerca de";
 
 const identity = {
-firstName: "juan",
-country: "Argentina",
-occupation: "Escritor técnico",
-hobbies: ["3D", "composicion Músical", "creacion de video juegos"],
+  firstName: "juan",
+  country: "Argentina",
+  occupation: "Escritor técnico",
+  hobbies: ["3D", "composicion Músical", "la creacion de video juegos"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", , "Blender", "Godot", "Unity", "Unreal Engine","Redacción de documentos"];
-
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Astro",
+  ,
+  "Blender",
+  "Godot",
+  "Unity",
+  "Unreal Engine",
+  "Redacción de documentos",
+];
 ---
 
-<Layout title={`${pageTitle} nosotros` }>
-
+<Layout title={`${pageTitle} nosotros`}>
   <body>
     <h1>Nosotros</h1>
     <h2>... ¡Gramaphenicos!</h2>
 
-    <p>El diseño 3D es una disciplina creativa y técnica que se ha convertido en una parte integral de diversas
-      industrias, desde la animación y los videojuegos hasta la arquitectura y la medicina. Esta técnica permite la
-      creación de objetos y escenas tridimensionales en un entorno virtual, lo que abre un mundo de posibilidades para
-      la expresión artística y la resolución de problemas.</p>
+    <p>
+      El diseño 3D es una disciplina creativa y técnica que se ha convertido en
+      una parte integral de diversas industrias, desde la animación y los
+      videojuegos hasta la arquitectura y la medicina. Esta técnica permite la
+      creación de objetos y escenas tridimensionales en un entorno virtual, lo
+      que abre un mundo de posibilidades para la expresión artística y la
+      resolución de problemas.
+    </p>
 
-    <p>En el corazón del diseño 3D se encuentra el software especializado, que permite a los diseñadores modelar,
-      texturizar y animar objetos y entornos en tres dimensiones. Uno de los programas más populares en este ámbito es
-      Blender, una herramienta de código abierto que ha ganado reconocimiento por su versatilidad y comunidad de
-      usuarios activa. Otras soluciones incluyen Autodesk Maya y Cinema 4D, que son ampliamente utilizadas en la
-      industria del cine y la publicidad.</p>
+    <p>
+      En el corazón del diseño 3D se encuentra el software especializado, que
+      permite a los diseñadores modelar, texturizar y animar objetos y entornos
+      en tres dimensiones. Uno de los programas más populares en este ámbito es
+      Blender, una herramienta de código abierto que ha ganado reconocimiento
+      por su versatilidad y comunidad de usuarios activa. Otras soluciones
+      incluyen Autodesk Maya y Cinema 4D, que son ampliamente utilizadas en la
+      industria del cine y la publicidad.
+    </p>
 
     <p>He aquí algunos datos sobre mí:</p>
     <ul class="custom-li-about">
       <li class="custom-li-about">Me llamo {identity.firstName}.</li>
       <li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>
-      <br>
-      {identity.hobbies.length >= 2 &&
-      <li>Dos de mis aficiones son: {identity.hobbies[0]} y {identity.hobbies[2]}</li>
+      <br />
+      {
+        identity.hobbies.length >= 2 && (
+          <li>
+            Dos de mis aficiones son: {identity.hobbies[0]} y{" "}
+            {identity.hobbies[2]}
+          </li>
+        )
       }
     </ul>
     <p>Mis estudios versan sobre:</p>
