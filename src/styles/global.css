@@ -75,12 +75,6 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
 }
-
-/* .nav-links a:hover,
-.nav-links a:focus {
- 
-} */
-
 .expanded {
   display: unset;
 }
@@ -103,6 +97,11 @@ h1 {
   }
 }
 
+/* TAGS DE POSTS */
+
+
+
+/* CODE */
 code {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;

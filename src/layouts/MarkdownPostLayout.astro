@@ -2,46 +2,64 @@
 import Layout from './Layout.astro';
 const { frontmatter } = Astro.props;
 ---
+
 <Layout title={frontmatter.title}>
   <p><em>{frontmatter.description}</em></p>
-  <p>{frontmatter.pubDate.slice(0,10)}</p>
+  <p>{frontmatter.pubDate.slice(0, 10)}</p>
 
   <p>Escrito por: {frontmatter.author}</p>
 
-  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+  <img class="img" src={frontmatter.image.url} width='300' alt={frontmatter.image.alt} />
 
-  <div class="tags">
-    {frontmatter.tags.map((tag) => (
-      <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
-    ))}
+  <div class='tags'>
+    {
+      frontmatter.tags.map((tag) => (
+        <p class='tag'>
+          <a href={`/tags/${tag}`}>{tag}</a>
+        </p>
+      ))
+    }
   </div>
   <slot />
 </Layout>
 <style>
+  :root {
+    --dark: #13151a;
+    --ligth: #fffdfb;
+    --rojo: #f87171;
+    --naranja: #fb923c;
+    --gris: #5b6e8a;
+    --code-dark: #334155;
+    --code-light: #d1d5db;
+  }
   a {
-    color: #92aac1;
+    color: var(--code-light);
     text-decoration: none;
   }
 
   a:hover {
-    color: #152737;
+     color: var(--code-light);
   }
 
   .tags {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .tag {
     margin: 0.25em;
-    border: solid 2px #233751;
-    border-radius: .3em;
-    padding: .01em .01em;
-    font-size: .9em;
-    background-color: #3a566f6e;
+    border-radius: 0.3em;
+    padding: 0.3em 0.3em;
+    font-size: 0.9em;
+    background-color: rgb(30, 41, 54);
   }
 
-.tag:hover {
-background-color: #6392bbb5;
-}
+  .tag:hover {
+    background-color: rgb(57, 74, 93);
+  }
+  .img {
+    border: 2px solid var(--code-dark);
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
 </style>
