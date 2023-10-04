@@ -3,19 +3,25 @@ import Layout from "../layouts/Layout.astro";
 const pageTitle = "Acerca de";
 
 const identity = {
-  firstName: "juan",
+  firstName: "Gramaphenia",
   country: "Argentina",
-  occupation: "Escritor técnico",
-  hobbies: ["3D", "composicion Músical", "la creacion de video juegos"],
+  occupation: "Escritores técnicos",
+  hobbies: [
+    "Formas de generacion de datos e imagenes",
+    "Creaciones Músical",
+    "estudio de los motores de creacion de videojuegos",
+  ],
 };
 
 const skills = [
   "HTML",
   "CSS",
   "JavaScript",
+  "C#",
+  "GDSCRIPT",
+  "C++",
   "React",
   "Astro",
-  ,
   "Blender",
   "Godot",
   "Unity",
@@ -48,21 +54,26 @@ const skills = [
       industria del cine y la publicidad.
     </p>
 
-    <p>He aquí algunos datos sobre mí:</p>
+    <p>He aquí algunos datos sobre nosotros:</p>
     <ul class="custom-li-about">
-      <li class="custom-li-about">Me llamo {identity.firstName}.</li>
-      <li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>
+      <li class="custom-li-about">
+        Nombramos "Gramapehia" nuestro hacer de diversas maneras, como en
+        tramas.{identity.firstName}.
+      </li>
+      <li>
+        Vivimos en {identity.country} y trabajamos como {identity.occupation}.
+      </li>
       <br />
       {
         identity.hobbies.length >= 2 && (
           <li>
-            Dos de mis aficiones son: {identity.hobbies[0]} y{" "}
+            Dos de nuestras aficiones son: {identity.hobbies[0]} y{" "}
             {identity.hobbies[2]}
           </li>
         )
       }
     </ul>
-    <p>Mis estudios versan sobre:</p>
+    <p>Mis estudios versan en:</p>
     <ul class="custom-list-about">
       {skills.map((skill) => <li class="custom-li-about">{skill}</li>)}
     </ul>

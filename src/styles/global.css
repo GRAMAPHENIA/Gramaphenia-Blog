@@ -133,11 +133,20 @@ a:hover {
 .custom-list-about {
   list-style: none;
   padding: 0;
+  display: grid;
+  gap: 20px;
 }
 .custom-li-about {
   list-style: none;
-  padding: 0;
+  padding: 16px;
+  margin:0;
+  background: #374151;
   display: block;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 html.dark {
