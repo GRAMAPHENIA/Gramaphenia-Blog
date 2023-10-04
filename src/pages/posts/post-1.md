@@ -60,7 +60,7 @@ reproducimos nuevamente la escena con `F6`.
 En la esquina superior izquierda de la pantalla hacemos clic en `Proyecto`
 y luego en `ajustes del proyecto`. En la pestaña `general` vamos a `display` y a
 `Windows`. Dentro en `Size` ajustamos los valores de `Viewport Height en 1920 `
-y los de `Viewport Width en 1080` luego en `Modo colocamos Maximized`.
+y los de `Viewport Width en 1080` luego en `Modo` colocamos `Maximized`.
 
 Una vez hecho esto, en la columna de la izquierda de la pestaña `general`,
 localizamos Rendering y hacemos clic en Anti Aliasing. En `Quality MSAA 3D`

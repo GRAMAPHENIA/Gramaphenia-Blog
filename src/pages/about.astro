@@ -7,9 +7,9 @@ const identity = {
   country: "Argentina",
   occupation: "Escritores técnicos",
   hobbies: [
-    "Formas de generacion de datos e imagenes",
-    "Creaciones Músical",
-    "estudio de los motores de creacion de videojuegos",
+    "Generación de datos e imagenes",
+    "Creaciones Musicales",
+    "Estudio de los programas de creación de videojuegos y modelado 3D",
   ],
 };
 
@@ -25,8 +25,21 @@ const skills = [
   "Blender",
   "Godot",
   "Unity",
-  "Unreal Engine",
-  "Redacción de documentos",
+  "UE5",
+  "Documentación",
+];
+
+const generalTitle = [
+  "La necesidad de un framework",
+  "La necesidad de un framework",
+  "La necesidad de un framework",
+  "La necesidad de un framework",
+  "La necesidad de un framework",
+  "La necesidad de un framework",
+  "La necesidad de un framework",
+  "La necesidad de un framework",
+  "La necesidad de un framework",
+  "La necesidad de un framework",
 ];
 ---
 
@@ -73,9 +86,80 @@ const skills = [
         )
       }
     </ul>
-    <p>Mis estudios versan en:</p>
-    <ul class="custom-list-about">
-      {skills.map((skill) => <li class="custom-li-about">{skill}</li>)}
-    </ul>
+    <p class="paragraph">Nuestros estudios versan sobre:</p>
+    <summary class="custom-list-about">Informacion</summary>
+     Seccion dedicada a comentarios acerca de:
+    {
+      skills.map((skill) => (
+        <>
+          <h2>{skill}</h2>
+          <details class="custom-list-about">
+            <h3>
+              {generalTitle.map((titleg) => {
+                <div>{titleg}</div>;
+              })}
+              Generals
+            </h3>
+            <div>
+              Este es un parrafo para demostrar que es un parrafo de prueva de
+              parrafo. Este es un parrafo para demostrar que es un parrafo de
+              prueva de parrafo. Este es un parrafo para demostrar que es un
+              parrafo de prueva de parrafo. Este es un parrafo para demostrar
+              que es un parrafo de prueva de parrafo. Este es un parrafo para
+              demostrar que es un parrafo de prueva de parrafo. Este es un
+              parrafo para demostrar que es un parrafo de prueva de parrafo.
+              Este es un parrafo para demostrar que es un parrafo de prueva de
+              parrafo.
+            </div>
+          </details>
+        </>
+      ))
+    }
   </body>
+
+  <!-- <details open>
+      <summary class="custom-li-about">Overview</summary>
+      <ol>
+        <li>Cash on hand: $500.00</li>
+        <li>Current invoice: $75.30</li>
+        <li>Due date: 5/6/19</li>
+      </ol>
+    </details> -->
 </Layout>
+
+<style>
+  .paragraph {
+    font-size: 30px;
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+    font-weight: 800;
+  }
+
+  summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 1em;
+    margin: 1em;
+  }
+
+  details[open] summary {
+    padding: 0.5em;
+    transition: all;
+    transition: ease-in-out;
+  }
+
+  details[open] {
+    border-bottom: 1px solid #fb923c;
+    margin-bottom: 0.5em;
+  }
+</style>
