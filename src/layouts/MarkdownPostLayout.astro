@@ -1,26 +1,31 @@
 ---
-import Layout from './Layout.astro';
+import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
-  <p><em>{frontmatter.description}</em></p>
+  <slot />
+  <p><em><strong>{frontmatter.description}</strong></em></p>
   <p>{frontmatter.pubDate.slice(0, 10)}</p>
 
   <p>Escrito por: {frontmatter.author}</p>
 
-  <img class="img" src={frontmatter.image.url} width='300' alt={frontmatter.image.alt} />
+  <img
+    class="img"
+    src={frontmatter.image.url}
+    width="300"
+    alt={frontmatter.image.alt}
+  />
 
-  <div class='tags'>
+  <div class="tags">
     {
       frontmatter.tags.map((tag) => (
-        <p class='tag'>
+        <p class="tag">
           <a href={`/tags/${tag}`}>{tag}</a>
         </p>
       ))
     }
   </div>
-  <slot />
 </Layout>
 <style>
   :root {
@@ -38,7 +43,7 @@ const { frontmatter } = Astro.props;
   }
 
   a:hover {
-     color: var(--code-light);
+    color: var(--code-light);
   }
 
   .tags {
