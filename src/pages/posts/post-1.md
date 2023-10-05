@@ -18,11 +18,9 @@ tags: ["Video Games", "3D", "Godot"]
 
 En la parte superior del programa podemos observar tres puntos en disposición vertical.
 
-<div>
-<p style = 'text-align:center;'>
+<!-- <p style = 'text-align:center;'>
 <img class="image-container" src="../../../public/enviroment.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT">
-</p>
-</div>
+</p> -->
 
 <!-- <img class="image-container" src="/public/edit_sun_and_enviroment-settings.webp" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT"/> -->
 
