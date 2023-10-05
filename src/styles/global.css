@@ -6,8 +6,8 @@
   --gris: #5b6e8a;
   --code-dark: #334155;
   --code-light: #d1d5db;
-  --parrafo-dark:#ece6d8;
-  --parrafo-light:#281804;
+  --parrafo-dark: #ece6d8;
+  --parrafo-light: #281804;
 }
 
 html {
@@ -36,11 +36,11 @@ h1 {
 }
 
 p {
-color: var(--parrafo-light);
+  color: var(--parrafo-light);
 }
- .dark p{
+.dark p {
   color: var(--parrafo-dark);
-  }
+}
 
 /* ESTILOS DEL NAVBAR */
 
@@ -73,17 +73,28 @@ color: var(--parrafo-light);
   left: 48px;
   display: none;
   margin: 0;
+  border-bottom: 1px solid var(--naranja);
 }
 
-.nav-links a {
-  display: block;
-  text-align: center;
-  padding: 5px 0;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
+.navbar {
+  position: relative;
+  display: flex;
 }
+
+.nav-links {
+  text-align: center;
+  font-size: x-large;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: var(--dark);
+  list-style: none;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: none;
+  max-height: 0;
+}
+
 .expanded {
   display: unset;
 }
