@@ -18,6 +18,12 @@ tags: ["Video Games", "3D", "Godot"]
 
 En la parte superior del programa podemos observar tres puntos en disposición vertical.
 
+<div>
+<p style = 'text-align:center;'>
+<img class="image-container" src="/public/edit_sun_and_enviroment-settings.webp" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT" width="300px">
+</p>
+</div>
+
 <!-- <img class="image-container" src="/public/edit_sun_and_enviroment-settings.webp" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT"/> -->
 
 Al hacer clic sobre ellos se pliega un menú, el cual posee en su esquina inferior izquierda un botón que dice `Add Sun To Scene`, con el cual agregamos un sol .
