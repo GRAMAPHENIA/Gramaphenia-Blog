@@ -20,7 +20,7 @@ En la parte superior del programa podemos observar tres puntos en disposición v
 
 <div>
 <p style = 'text-align:center;'>
-<img class="image-container" src="../../../public/enviroment.webp" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT">
+<img class="image-container" src="../../../public/enviroment.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT">
 </p>
 </div>
 
