@@ -16,6 +16,8 @@ const { frontmatter } = Astro.props;
     width="300"
     alt={frontmatter.image.alt}
   />
+  <small>Linietsky, Manzur & Godot Contributors.</smal>
+
 
   <div class="tags">
     {
@@ -50,6 +52,7 @@ const { frontmatter } = Astro.props;
   .tags {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 4rem;
   }
 
   .tag {
@@ -66,9 +69,12 @@ const { frontmatter } = Astro.props;
   .img {
     border: 2px solid var(--code-dark);
     border-radius: 5px;
-    margin-bottom: 2rem;
+    margin-top: 5rem;
   }
   .p-padding{
     padding-top: 10rem;
+  }
+  small{
+    display: block;
   }
 </style>
