@@ -6,6 +6,8 @@
   --gris: #5b6e8a;
   --code-dark: #334155;
   --code-light: #d1d5db;
+  --parrafo-dark:#ece6d8;
+  --parrafo-light:#281804;
 }
 
 html {
@@ -32,6 +34,13 @@ h1 {
   text-align: center;
   margin: 0em;
 }
+
+p {
+color: var(--parrafo-light);
+}
+ .dark p{
+  color: var(--parrafo-dark);
+  }
 
 /* ESTILOS DEL NAVBAR */
 

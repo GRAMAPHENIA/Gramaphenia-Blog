@@ -83,3 +83,8 @@ hacemos clic, buscamos `Directional Shadows` y `Soft Shadows Filter` y colocamos
 opción de `Soft Medium (Average)`.
 
 ### CREACIÓN DEL PERSONAJE
+
+Colocamos nuestra vista sobre la esquina superior izquierda de la pantalla.
+Vamos a `Escena` `Nueva escena`.
+
+Inresamos a nuestra nueva escena y en el panel de izquierdo donde dice Escena, hacemos click en el boton `+ Other node `

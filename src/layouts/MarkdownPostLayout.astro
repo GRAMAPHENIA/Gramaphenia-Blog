@@ -5,7 +5,7 @@ const { frontmatter } = Astro.props;
 
 <Layout title={frontmatter.title}>
   <slot />
-  <p><em><strong>{frontmatter.description}</strong></em></p>
+  <p class="p-padding"><em><strong>{frontmatter.description}</strong></em></p>
   <p>{frontmatter.pubDate.slice(0, 10)}</p>
 
   <p>Escrito por: {frontmatter.author}</p>
@@ -67,5 +67,8 @@ const { frontmatter } = Astro.props;
     border: 2px solid var(--code-dark);
     border-radius: 5px;
     margin-bottom: 2rem;
+  }
+  .p-padding{
+    padding-top: 10rem;
   }
 </style>
