@@ -29,13 +29,13 @@ const skills = [
   "Documentación",
 ];
 
-const generalTitle = [
-  "La necesidad de un framework",
-  "La necesidad de un framework",
-  "La necesidad de un framework",
-  "La necesidad de un framework",
-  "La necesidad de un framework",
-  "La necesidad de un framework",
+const generaltitle = [
+  "La necesidad de un HTML",
+  "La necesidad de un CSS",
+  "La necesidad de un JS",
+  "La necesidad de un C#",
+  "La necesidad de un GDSCRIPT",
+  "La necesidad de un C++",
   "La necesidad de un framework",
   "La necesidad de un framework",
   "La necesidad de un framework",
@@ -90,29 +90,25 @@ const generalTitle = [
     <summary class="custom-list-about">Informacion</summary>
      Seccion dedicada a comentarios acerca de:
     {
-      skills.map((skill) => (
-        <>
+      skills.map((skill, index) => (
+        <summary>
           <h2>{skill}</h2>
           <details class="custom-list-about">
-            <h3>
-              {generalTitle.map((titleg) => {
-                <div>{titleg}</div>;
-              })}
-              Generals
-            </h3>
             <div>
-              Este es un parrafo para demostrar que es un parrafo de prueva de
-              parrafo. Este es un parrafo para demostrar que es un parrafo de
-              prueva de parrafo. Este es un parrafo para demostrar que es un
-              parrafo de prueva de parrafo. Este es un parrafo para demostrar
-              que es un parrafo de prueva de parrafo. Este es un parrafo para
-              demostrar que es un parrafo de prueva de parrafo. Este es un
-              parrafo para demostrar que es un parrafo de prueva de parrafo.
-              Este es un parrafo para demostrar que es un parrafo de prueva de
-              parrafo.
+              <h3>{generaltitle[index]}</h3>
+              <p>
+                Este es un párrafo para demostrar que es un párrafo de prueba.
+                Este es un párrafo para demostrar que es un párrafo de prueba.
+                Este es un párrafo para demostrar que es un párrafo de prueba.
+                Este es un párrafo para demostrar que es un párrafo de prueba.
+                Este es un párrafo para demostrar que es un párrafo de prueba.
+                Este es un párrafo para demostrar que es un párrafo de prueba.
+                Este es un párrafo para demostrar que es un párrafo de prueba.
+                Este es un párrafo para demostrar que es un párrafo de prueba.
+              </p>
             </div>
           </details>
-        </>
+        </summary>
       ))
     }
   </body>

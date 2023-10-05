@@ -14,18 +14,24 @@ tags: ["Video Games", "3D", "Godot"]
 
 ## Inicio
 
-- Creamos un Nodo3D con una cámara 3D dentro.
+- Creamos un Nodo3D con una cámara 🎥 3D dentro.
 
 En la parte superior del programa podemos observar tres puntos en disposición vertical.
-Al hacer clic sobre ellos se pliega un menú, el cual posee en su esquina inferior izquierda un botón con el cual agregamos un sol.
+
+<img class="image-container" src="../../../public/edit_sun_and_enviroment-settings.webp" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT"/>
+
+Al hacer clic sobre ellos se pliega un menú, el cual posee en su esquina inferior izquierda un botón que dice `Add Sun To Scene`, con el cual agregamos un sol .
 Hacemos clic en él.
+<img class="image-container" src="../../../public/edit-sun-and-enviroment-settings-dos.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT"/>
 
-Volvemos a hacer clic sobre los puntos, hacemos clic en el botón que dice:
+Volvemos a hacer clic sobre los puntos y clic en el botón que dice:
 
-- Add environment To Scene y agregamos un ambiente.
+> ` Add environment To Scene` agregando un ambiente.
 
-Con esto ya podemos reproducir nuestra escena en el panel de la esquina superior derecha.
+Con esto ya podemos reproducir nuestra escena en el panel de la esquina superior derecha .
 O con la tecla F6. Le ponemos un nombre a la escena y la guardamos.
+
+<img class="image-container" src="../../../public/reproducir_la_escena_editada_cuatro.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT"/>
 
 ## Mesh instance 3D
 
@@ -38,7 +44,9 @@ podemos verlo dentro de la jerarquía de nuestra escena.
 
 Hacia la derecha de nuestra pantalla nos encontramos con el inspector, que como
 tiene seleccionado nuestro nodo `MeshInstance3D`, nos muestra sus propiedades.
-Hacemos clic en <empty> y agregamos un `Nuevo PlaneMesh`.
+Hacemos clic en `<empty>` y agregamos un `Nuevo PlaneMesh`.
+
+<img class="image-container-mesh" src="../../../public/inspector_mesh_instance_3d_dos.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT"/>
 
 En el inspector podemos observar la propiedad size a la cual le cambiamos el
 valor a x:10m e y:10m.
