@@ -87,4 +87,10 @@ opción de `Soft Medium (Average)`.
 Colocamos nuestra vista sobre la esquina superior izquierda de la pantalla.
 Vamos a `Escena` `Nueva escena`.
 
-Inresamos a nuestra nueva escena y en el panel de izquierdo donde dice Escena, hacemos click en el boton `+ Other node ` en la tarjeta que nos aparece en la pantalla, ingresamos en el buscador la palabra `body3d` dandonos como resultado una lista de la cual tenemos que elegir el nodo `RigidBody3D` y damos `Create` en el boton que se encuentra en la `parte inferior` de la tarjeta.
+Inresamos a nuestra nueva escena y en el panel de izquierdo donde dice Escena, hacemos clic en el boton `+ Other node ` en la tarjeta que nos aparece en la pantalla, ingresamos en el buscador la palabra `body3d` dandonos como resultado una lista de la cual tenemos que elegir el nodo `RigidBody3D` y damos `Create` en el boton que se encuentra en la `parte inferior` de la tarjeta.
+
+Hacemos clic sobre nodo creado y le cambiamos el nombre a `Player`. Una vez hecho esto damos en crear nuevo nodo con el signo de `+`, en el buscador escribimos `meshins` y seleccionamos la opcion de `MeshInstance3D` y luego en create. Esto nos da como resultado un `nuevo nodo hijo` de `Player`.
+
+En las propiedades del `MMeshInstance3D` en el `Inspector`, podemos observar que en las propiedades en la seccion de `Mesh` dice `<empty>`, damos clic dentro y seleccionamos la opcion `New CapsuleMesh` Una vez creada la malla , en la parte superior del programa podemos observar un icono cuadrado rojo qie dice `Mesh`. Hacemos clic en el y seleccionamos `Crear collider conexo hermano`. 
+
+Una vez hecho esto, hacemos clic en el `nodo padre` `Player` y en el inspector buscamos la opción  `Lock Rotation` y la activamos hachien clic en el `checkbox`.
