@@ -1,40 +1,23 @@
 ---
-// import Social from './Social.astro';
-import IconoYoutube from './IconoYoutube.astro';
-import IconoInstagram from './IconoInstagram.astro';
+import IconoYoutube from "./IconoYoutube.astro";
+import IconoInstagram from "./IconoInstagram.astro";
 
 const platform = "github";
 const username = "gramaphenia";
 ---
 
-<footer>
-  <p >Más proyectos en
-    <a class="iconos-redes" href={`https://www.${platform}.com/${username}`}>{platform}!</a>
-    
+<footer class="footer-container">
+  <p>
+    Más proyectos en
+    <a class="iconos-redes" href={`https://www.${platform}.com/${username}`}
+      >{platform}!</a
+    >
   </p>
-  <!-- <Social platform="instagram" username="gramaphenia" />
-  <Social platform="youtube" username="@gramaphenia" /> -->
-  <a class="iconos-redes"  href="https://www.youtube.com/channel/@gramaphenia">
-    <IconoYoutube  />
+  <a class="iconos-redes" href="https://www.youtube.com/channel/@gramaphenia">
+    <IconoYoutube />
   </a>
 
-  <a class="iconos-redes"  href="https://www.instagram.com/gramaphenia/">
+  <a class="iconos-redes" href="https://www.instagram.com/gramaphenia/">
     <IconoInstagram />
   </a>
-
 </footer>
-<style>
-  footer {
-    display: flex;
-    gap: 2rem;
-    margin-top: 1.5rem;
-    align-items: end;
-    /* justify-content: center; */
-  }
- 
-  a {
-    color:var(--dark);
-    font-weight: 900;
-  }
- 
-</style>
