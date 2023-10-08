@@ -16,27 +16,32 @@ tags: ["Video Games", "3D", "Godot"]
 
 - Creamos un Nodo3D con una cámara 🎥 3D dentro.
 
-En la parte superior del programa podemos observar tres puntos en disposición vertical.
+En la parte superior del programa podemos observar `tres puntos` en disposición vertical.
 
-<!-- <p style = 'text-align:center;'>
-<img class="image-container" src="../../../public/enviroment.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT">
-</p> -->
-
-<!-- <img class="image-container" src="/public/edit_sun_and_enviroment-settings.webp" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT"/> -->
+<p style = 'text-align:center;'>
+<img class="image-container" src="../../../public/navegacion.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT" style="height: 40px; width: auto;">
+</p>
 
 Al hacer clic sobre ellos se pliega un menú, el cual posee en su esquina inferior izquierda un botón que dice `Add Sun To Scene`, con el cual agregamos un sol .
 Hacemos clic en él.
 
-<!-- <img class="image-container" src="/public/edit-sun-and-enviroment-settings-dos.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT"/> -->
+<p style = 'text-align:center;'>
+<img class="image-container" src="../../../public/creacion-de-sol.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT" style="height: 40px; width: auto;">
+</p>
 
 Volvemos a hacer clic sobre los puntos y clic en el botón que dice:
+` Add environment To Scene` agregando un ambiente.
 
-> ` Add environment To Scene` agregando un ambiente.
+<p style = 'text-align:center;'>
+<img class="image-container" src="../../../public/entorno-de-escena.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT" style="height: 40px; width: auto;">
+</p>
 
 Con esto ya podemos reproducir nuestra escena en el panel de la esquina superior derecha .
 O con la tecla F6. Le ponemos un nombre a la escena y la guardamos.
 
-<!-- <img class="image-container" src="/public/reproducir_la_escena_editada_cuatro.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT"/> -->
+<p style = 'text-align:center;'>
+<img class="image-container" src="../../../public/escena.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT" style="height: 80px; width: auto;">
+</p>
 
 ## Mesh instance 3D
 
@@ -44,21 +49,31 @@ En la escena principal agregamos un nuevo nodo.
 Este nodo lo podemos agregar haciendo clic en el icono `+` que se encuentra hacia
 la izquierda superior de nuestra pantalla.
 En el buscador del menú que nos aparece escribimos `meshin` y se nos da a elegir
-algunos tipos de nodo. Seleccionamos `MeshInstance3D` y damos crear. Ahora
-podemos verlo dentro de la jerarquía de nuestra escena.
+algunos tipos de nodo. Seleccionamos `MeshInstance3D` y damos crear.
+
+<p style = 'text-align:center;'>
+<img class="image-container" src="../../../public/meshin.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT" style="height: 100px; width: auto;">
+</p>
+
+Ahora podemos verlo dentro de la jerarquía de nuestra escena.
+
+<p style = 'text-align:center;'>
+<img class="image-container" src="../../../public/meshin-escena.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT" style="height: 100px; width: auto;">
+</p>
 
 Hacia la derecha de nuestra pantalla nos encontramos con el inspector, que como
 tiene seleccionado nuestro nodo `MeshInstance3D`, nos muestra sus propiedades.
 Hacemos clic en `<empty>` y agregamos un `Nuevo PlaneMesh`.
-
-<!-- <img class="image-container-mesh" src="/public/inspector_mesh_instance_3d_dos.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT"/> -->
+<p style = 'text-align:center;'>
+<img class="image-container" src="../../../public/empty.png" alt="Imagen de motor grafico para el desarrollo de videojuegos GODOT" style="height: 500px; width: auto;">
+</p>
 
 En el inspector podemos observar la propiedad size a la cual le cambiamos el
 valor a x:10m e y:10m.
 
-> - Nótese que si volvemos a reproducir la escena, el plano todavía no se ve.
->   Esto se debe a que la malla y la cámara se encuentran sobre la misma línea del
->   horizonte.
+> Nótese que si volvemos a reproducir la escena, el plano todavía no se ve.
+> Esto se debe a que la malla y la cámara se encuentran sobre la misma línea del
+> horizonte.
 
 Seleccionamos la cámara (en la pantalla podemos observar un icono rojo con
 forma de cámara si hacemos clic en él podemos obtener una vista rápida de la
@@ -91,6 +106,6 @@ Inresamos a nuestra nueva escena y en el panel de izquierdo donde dice Escena, h
 
 Hacemos clic sobre nodo creado y le cambiamos el nombre a `Player`. Una vez hecho esto damos en crear nuevo nodo con el signo de `+`, en el buscador escribimos `meshins` y seleccionamos la opcion de `MeshInstance3D` y luego en create. Esto nos da como resultado un `nuevo nodo hijo` de `Player`.
 
-En las propiedades del `MMeshInstance3D` en el `Inspector`, podemos observar que en las propiedades en la seccion de `Mesh` dice `<empty>`, damos clic dentro y seleccionamos la opcion `New CapsuleMesh` Una vez creada la malla , en la parte superior del programa podemos observar un icono cuadrado rojo qie dice `Mesh`. Hacemos clic en el y seleccionamos `Crear collider conexo hermano`. 
+En las propiedades del `MMeshInstance3D` en el `Inspector`, podemos observar que en las propiedades en la seccion de `Mesh` dice `<empty>`, damos clic dentro y seleccionamos la opcion `New CapsuleMesh` Una vez creada la malla , en la parte superior del programa podemos observar un icono cuadrado rojo qie dice `Mesh`. Hacemos clic en el y seleccionamos `Crear collider conexo hermano`.
 
-Una vez hecho esto, hacemos clic en el `nodo padre` `Player` y en el inspector buscamos la opción  `Lock Rotation` y la activamos hachien clic en el `checkbox`.
+Una vez hecho esto, hacemos clic en el `nodo padre` `Player` y en el inspector buscamos la opción `Lock Rotation` y la activamos hachien clic en el `checkbox`.

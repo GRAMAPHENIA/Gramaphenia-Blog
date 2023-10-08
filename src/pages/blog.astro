@@ -1,8 +1,8 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import BlogPost from '../components/BlogPost.astro';
-const allPosts = await Astro.glob('../pages/posts/*.md');
-const pageTitle = "Blog"
+import Layout from "../layouts/Layout.astro";
+import BlogPost from "../components/BlogPost.astro";
+const allPosts = await Astro.glob("../pages/posts/*.md");
+const pageTitle = "Blog";
 ---
 
 <Layout title={pageTitle}>
@@ -10,47 +10,16 @@ const pageTitle = "Blog"
     <h1>Blog</h1>
     <h2>Explorando el Fascinante Mundo del Diseño 3D</h2>
     <p>
-      En el emocionante universo del diseño contemporáneo, el diseño 3D ha emergido como una técnica innovadora que
-      trasciende
-      las fronteras de múltiples industrias. Desde el <code>cine</code> y la <code>animación</code> hasta la
-      arquitectura y la medicina, el diseño
-      3D
-      está transformando la forma en que percibimos y creamos el mundo que nos rodea.
-      <!-- <br><br>
-      En esencia, el diseño 3D es la creación de objetos y entornos tridimensionales en un
-      espacio virtual.
-      Esto se
-      logra a
-      través de software especializado que permite a los diseñadores modelar, texturizar y animar con precisión.
-      <code>Blender</code>,
-      <code>Autodesk Maya</code> y <code>Cinema 4D</code> son algunas de las herramientas líderes en esta área.
-      <br><br>
-      El diseño 3D ha revolucionado la industria del entretenimiento al dar vida a mundos imaginativos en el cine y la
-      animación. También es esencial en el desarrollo de videojuegos, permitiendo la creación de mundos interactivos.
-      Además,
-      la <code>realidad virtual</code> y aumentada están llevando el diseño 3D a nuevas dimensiones al incorporarlo en
-      la experiencia del usuario.
-      <br><br>
-      En campos como la <code>arquitectura</code> y la <code>ingeniería
-      </code> , el diseño 3D facilita la visualización
-      de proyectos
-      complejos,
-      permitiendo a los profesionales mostrar sus ideas de manera efectiva. En <code>medicina</code>, se utiliza para
-      crear modelos
-      anatómicos precisos para cirugías y educación médica.
-      <br><br>
-      Pero el diseño 3D no se limita a la pantalla. La impresión 3D convierte diseños virtuales en objetos físicos,
-      transformando la fabricación y la creación de <code>prototipos</code> .
-      <br><br>
-      En resumen, el diseño 3D es una disciplina que fusiona creatividad y tecnología, desencadenando una ola de
-      innovación en
-      diversas industrias. Su versatilidad y potencial son ilimitados, y su continua <code>evolución</code> promete un
-      <code>futuro</code>
-      emocionante y
-      lleno de posibilidades creativas. -->
+      En el universo del diseño contemporáneo, el diseño 3D ha emergido como una
+      técnica innovadora que trasciende las fronteras de múltiples industrias.
+      El cine y la animación, la arquitectura y la medicina.
     </p>
     <ul class="custom-list">
-         🎲 {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+      🎲 {
+        allPosts.map((post) => (
+          <BlogPost url={post.url} title={post.frontmatter.title} />
+        ))
+      }
     </ul>
   </body>
 </Layout>
