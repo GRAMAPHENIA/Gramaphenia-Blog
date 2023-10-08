@@ -5,7 +5,7 @@ author: Rojo Fang
 description: "Este es el inicio de un proyecto en Godot."
 image:
   url: "../../godot_logo.svg"
-  alt: "Captura de pantalla del software Godot"
+  alt: "Capturas de pantalla del software Godot"
 pubDate: 2023-10-03
 tags: ["Video Games", "3D", "Godot"]
 ---
