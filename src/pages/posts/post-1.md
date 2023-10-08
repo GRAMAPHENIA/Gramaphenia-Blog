@@ -16,7 +16,7 @@ tags: ["Video Games", "3D", "Godot"]
 
 En la parte superior del programa, podemos observar tres puntos en disposición vertical.
 
-![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/navegacion.png)
+<!-- ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/navegacion.png "Creacion de Nodo3D") -->
 
 Al hacer clic sobre ellos, se pliega un menú que posee un botón que dice `Add Sun To Scene`, con el cual agregamos un sol. Hacemos clic en él.
 
