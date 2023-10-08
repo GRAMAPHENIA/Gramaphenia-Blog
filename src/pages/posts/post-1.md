@@ -16,33 +16,33 @@ tags: ["Video Games", "3D", "Godot"]
 
 En la parte superior del programa, podemos observar tres puntos en disposición vertical.
 
-![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/navegacion.png)
+![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/navegacion.png "Creacion de Nodo3D")
 
 Al hacer clic sobre ellos, se pliega un menú que posee un botón que dice `Add Sun To Scene`, con el cual agregamos un sol. Hacemos clic en él.
 
-<!-- ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/creación-de-sol.png){style="height: 40px; width: auto;"} -->
+![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/creacion-de-sol.png "Creacion de Sol")
 
 Volvemos a hacer clic sobre los puntos y clic en el botón que dice: `Add environment To Scene`, agregando un ambiente.
 
-<!-- ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/entorno-de-escena.png){style="height: 40px; width: auto;"} -->
+![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/entorno-de-escena.png)
 
 Con esto ya podemos reproducir nuestra escena en el panel de la esquina superior derecha. O con la tecla F6. Le ponemos un nombre a la escena y la guardamos.
 
-<!-- ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/escena.png){style="height: 80px; width: auto;"} -->
+![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/escena.png)
 
 ## Mesh instance 3D
 
 En la escena principal, agregamos un nuevo nodo. Este nodo lo podemos agregar haciendo clic en el icono `+` que se encuentra hacia la izquierda superior de nuestra pantalla. En el buscador del menú que nos aparece escribimos `meshin` y se nos da a elegir algunos tipos de nodo. Seleccionamos `MeshInstance3D` y damos crear.
 
-<!-- ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/meshin.png){style="height: 100px; width: auto;"} -->
+![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/meshin.png)
 
 Ahora podemos verlo dentro de la jerarquía de nuestra escena.
 
-<!-- ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/meshin-escena.png){style="height: 100px; width: auto;"} -->
+![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/meshin-escena.png)
 
 Hacia la derecha de nuestra pantalla nos encontramos con el inspector, que como tiene seleccionado nuestro nodo `MeshInstance3D`, nos muestra sus propiedades. Hacemos clic en `<empty>` y agregamos un `Nuevo PlaneMesh`.
 
-<!-- ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/empty.png){style="height: 500px; width: auto;"} -->
+![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](../../../public/empty.png)
 
 En el inspector podemos observar la propiedad size a la cual le cambiamos el valor a x:10m e y:10m.
 
