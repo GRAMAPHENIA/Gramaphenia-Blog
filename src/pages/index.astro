@@ -1,28 +1,30 @@
 ---
 import Layout from "../layouts/Layout.astro";
-// import Greeting from '../components/Greeting.jsx';
 const pageTitle = "Hexágono";
 ---
 
 <Layout title={pageTitle}>
   <body class="contenedor">
     <h1>cuatro cientos cuatro</h1>
-    <h3>[un blog de gramaphenia]</h3>
-    <!-- <Greeting client:load messages={["HTML", "CSS" , "JS" , "REACT", "NODEJS" ]} /> -->
-    <div class="centro-index">
+    <h2><span>[</span>un blog de gramaphenia<span>]</span></h2>
+    <div class="centrado">
       <p>Preparando secciones</p>
     </div>
   </body>
 </Layout>
 
+<!-- 🔴 🧩 STYLES 🧩 🔴 -->
 <style>
-  h3 {
+  h2 {
     display: flex;
     justify-content: center;
   }
+  span {
+    color: #f87171;
+  }
 
-  /* CLASES PERSONALIZADAS */
-  .centro-index {
+  /* 🔴 🧩 CUSTOMS 🧩 🔴 */
+  .centrado {
     display: flex;
     justify-content: center;
     align-items: center;

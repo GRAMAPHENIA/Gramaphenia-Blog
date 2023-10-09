@@ -220,6 +220,11 @@ html.dark {
 .dark p {
   color: var(--parrafo-dark);
 }
+
+/* 🔴 🧩 DARK ABOUT 🧩 🔴 */
+ .dark .acerca-de{
+  font-weight:lighter;
+}
 .dark .menu .line {
   background: var(--ligth);
 }

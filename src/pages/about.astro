@@ -49,14 +49,14 @@ const generaltitle = [
 <Layout title={`${pageTitle} nosotros`}>
   <body>
     <h1>Nosotros</h1>
-    <h2>... ¡Gramaphenicos!</h2>
+    <h2 class="titulo"><span>[</span> ¡gramaphenicos! <span>]</span></h2>
 
     <p>
       Disciplina creativa y técnica que se ha convertido en una parte integral
       de nuestras existencias.
     </p>
 
-    <p>He aquí algunos datos sobre nosotros:</p>
+    <!-- <p>He aquí algunos datos sobre nosotros:</p>
     <ul class="custom-li-about">
       <li class="custom-li-about">
         Nombramos {identity.firstName} nuestro hacer .
@@ -73,13 +73,13 @@ const generaltitle = [
           </li>
         )
       }
-    </ul>
+    </ul> -->
     <p class="paragraph">Nuestros estudios versan sobre:</p>
     <summary class="custom-list-about">Informacion</summary>
      Seccion dedicada a comentarios acerca de:
     {
       skills.map((skill, index) => (
-        <summary>
+        <summary class="acerca-de">
           <h2>{skill}</h2>
           <details class="custom-list-about">
             <div>
@@ -102,6 +102,7 @@ const generaltitle = [
   </body>
 </Layout>
 
+<!-- 🔴 🧩 STYLES 🧩 🔴  -->
 <style>
   .paragraph {
     font-size: 30px;
@@ -120,12 +121,22 @@ const generaltitle = [
     font-weight: 900;
   }
 
+  span {
+    color: #f87171;
+  }
+
   summary {
-    font-weight: lighter;
+    font-weight: bold;
     margin: -0.5em -0.5em 0;
     padding: 1em;
     margin: 1em;
   }
+  
+  /* 🔴 🧩 NO LLEGAN LAS VARIABLES NI EL MODO DARK 🧩 🔴 */
+
+  /* .dark .acerca-de {
+    font-weight: lighter;
+  } */
 
   details[open] summary {
     padding: 0.5em;
@@ -137,5 +148,11 @@ const generaltitle = [
   details[open] {
     border-bottom: 2px solid #fb923c;
     margin-bottom: 1em;
+  }
+
+  .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>
