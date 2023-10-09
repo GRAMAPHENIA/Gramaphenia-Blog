@@ -1,13 +1,45 @@
 ---
-const { title, url } = Astro.props
+const { title, url } = Astro.props;
 ---
+
 <li><a href={url}>{title}</a></li>
 
-<!-- <style>
-   a {
-        color: #5b6e8a;
+<style>
+  .card-container {
+    display: block;
+    flex-direction: column;
+  }
+
+  li {
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--dark);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+ li .dark {
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--dark);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(208, 91, 91, 0.5);
+  }
+
+  a {
+    color: #5b6e8a;
+  }
+
+  a:hover {
+    color: #f87171;
+  }
+
+  @media screen and (max-width: 630px) {
+    .card-container {
+      display: block;
     }
-    a:hover{
-        color: #f87171;
+    li {
+      margin: 10px 0;
     }
-</style> -->
+  }
+</style>

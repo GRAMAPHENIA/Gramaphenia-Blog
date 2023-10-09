@@ -16,8 +16,7 @@ const { frontmatter } = Astro.props;
     width="300"
     alt={frontmatter.image.alt}
   />
-  <small>Linietsky, Manzur & Godot Contributors.</smal>
-
+  <small>Linietsky, Manzur & Godot Contributors.</small>
 
   <div class="tags">
     {
@@ -44,6 +43,9 @@ const { frontmatter } = Astro.props;
     color: var(--code-light);
     text-decoration: none;
   }
+   a .dark {
+    color: var(--naranja);
+  }
 
   a:hover {
     color: var(--code-light);
@@ -55,12 +57,19 @@ const { frontmatter } = Astro.props;
     padding-top: 4rem;
   }
 
-  .tag {
+  .dark .tag  {
     margin: 0.25em;
     border-radius: 0.3em;
     padding: 0.3em 0.3em;
     font-size: 0.9em;
     background-color: rgb(30, 41, 54);
+  }
+  .tag {
+    margin: 0.25em;
+    border-radius: 0.3em;
+    padding: 0.3em 0.3em;
+    font-size: 0.9em;
+    background-color: rgb(64, 112, 171);
   }
 
   .tag:hover {
@@ -71,10 +80,10 @@ const { frontmatter } = Astro.props;
     border-radius: 5px;
     margin-top: 5rem;
   }
-  .p-padding{
+  .p-padding {
     padding-top: 5rem;
   }
-  small{
+  small {
     display: block;
   }
 </style>

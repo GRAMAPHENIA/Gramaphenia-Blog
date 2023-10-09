@@ -17,7 +17,7 @@ body {
 html {
   font-family: system-ui, sans-serif;
   background: var(--ligth);
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   color: var(--dark);
 }
 /* 🔴 🧩 BODY 🧩 */
@@ -107,7 +107,6 @@ p {
   font-size: 0.5em;
 }
 
-
 .expanded {
   display: unset;
 }
@@ -142,7 +141,7 @@ code {
   color: var(--dark);
 }
 
-.tag {
+/* .tag {
   margin: 0.15em;
   border-radius: 0.25em;
   padding: 0.01em 0.01em;
@@ -158,7 +157,7 @@ code {
 
 .tag:hover {
   background-color: var(--code-light);
-}
+} */
 
 a {
   color: var(--code-light);
@@ -182,12 +181,12 @@ a:hover {
 
 /* 🔴 🧩 CUSTOMS 🧩 */
 
-.custom-list {
+/* .custom-list {
   list-style: none;
   padding: 0;
   display: flex;
   margin-top: 10rem;
-}
+} */
 
 .custom-list-about {
   list-style: none;
@@ -195,6 +194,7 @@ a:hover {
   display: grid;
   gap: 20px;
 }
+
 .custom-li-about {
   list-style: none;
   padding: 16px;

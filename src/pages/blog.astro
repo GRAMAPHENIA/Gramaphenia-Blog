@@ -8,12 +8,12 @@ const pageTitle = "Blog";
 <Layout title={pageTitle}>
   <body>
     <h1>Blog</h1>
-    <h2>Explorando el Fascinante Mundo del Diseño 3D</h2>
+    <h2><span>[</span> Diseño 3D y Videojuegos <span>]</span></h2>
     <p>
-      El diseño 3D ha emergido como una
-      técnica innovadora que trasciende las fronteras de múltiples industrias.
+      Documentacion de los procesos del modelado 3D y del desarrollo
+      Videojuegos.
     </p>
-    <ul class="custom-list">
+    <ul>
       🎲 {
         allPosts.map((post) => (
           <BlogPost url={post.url} title={post.frontmatter.title} />
@@ -22,3 +22,23 @@ const pageTitle = "Blog";
     </ul>
   </body>
 </Layout>
+
+<!-- 🔴 🧩 ESTILOS DEL BLOG 🧩 🔴 -->
+
+<style>
+  body {
+    text-align: center;
+  }
+  span {
+    color: var(--rojo);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 20px;
+    /* margin-top: 10rem; */
+  }
+</style>
