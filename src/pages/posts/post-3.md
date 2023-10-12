@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Tres
+title: Inicios en UE5
 author: Astro
 description: "Tuve algunos problemas, pero preguntar en la comunidad me ayudó mucho."
 image:

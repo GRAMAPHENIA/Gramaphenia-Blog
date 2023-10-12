@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Cuatro
+title: Inicios en Blender 3D
 author: Astro 
 description: "Tuve algunos problemas..."
 image:

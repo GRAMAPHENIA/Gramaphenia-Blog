@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Dos
+title: Inicios en Unity
 author: Astro 
 description: "Tuve algunos problemas, pero preguntar en la comunidad me ayudó mucho."
 image:

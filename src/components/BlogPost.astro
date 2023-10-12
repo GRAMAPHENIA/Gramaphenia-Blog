@@ -1,8 +1,8 @@
 ---
-const { title, url } = Astro.props;
+const { title, url,image } = Astro.props;
 ---
 
-<li><a href={url}>{title}</a></li>
+<li><a href={url}>{image}{title}</a></li>
 
 <style>
   .card-container {
