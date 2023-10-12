@@ -1,8 +1,8 @@
 ---
-const { title, url,image } = Astro.props;
+const { title, url, } = Astro.props;
 ---
 
-<li><a href={url}>{image}{title}</a></li>
+<li><a href={url}>{title}</a></li>
 
 <style>
   .card-container {
@@ -20,7 +20,6 @@ const { title, url,image } = Astro.props;
 
   a {
     color: var(--parrafo-dark);
-    
   }
 
   a:hover {
