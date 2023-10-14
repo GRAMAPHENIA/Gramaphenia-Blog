@@ -33,17 +33,17 @@ tags: ["Video Games", "3D", "Godot"]
 
 ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/entorno-de-escena.png)
 
--  Con esto ya podemos reproducir nuestra escena ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/escena.png) en el panel de la esquina superior derecha. O con la tecla F6. Le ponemos un nombre a la escena y la guardamos.
+-  Con esto ya podemos reproducir nuestra escena ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/escena.png "Creacion de entorno") en el panel de la esquina superior derecha. O con la tecla F6. Le ponemos un nombre a la escena y la guardamos.
 
 ## MESH INSTANCE 3D
 
 - En la escena principal, agregamos un nuevo nodo. Este nodo lo podemos agregar haciendo clic en el icono `+` que se encuentra hacia la izquierda superior de nuestra pantalla. En el buscador del menú que nos aparece escribimos `meshin` y se nos da a elegir algunos tipos de nodo. Seleccionamos `MeshInstance3D` y damos crear.
 
-![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/meshin.png)
+![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/meshin.png "Mesh instance 3D")
 
 - Ahora podemos verlo dentro de la jerarquía de nuestra escena.
 
-![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/meshin-escena.png)
+![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/meshin-escena.png "Mesh instance 3D")
 
 - Hacia la derecha de nuestra pantalla nos encontramos con el inspector, que como tiene seleccionado nuestro nodo `MeshInstance3D`, nos muestra sus propiedades. Hacemos clic en `<empty>` y agregamos un `Nuevo PlaneMesh`.
 
