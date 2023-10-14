@@ -14,26 +14,25 @@ tags: ["Video Games", "3D", "Godot"]
 
 # [🕹️]
 
-
 ## INICIEMOS UN PROYECTO NUEVO GODOT
 
--  Creamos un Nodo3D con una cámara 3D dentro.
+- Creamos un Nodo3D con una cámara 3D dentro.
 
 ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/node-camera.svg "Creación de Nodo3D")
 
--  En la parte superior del programa, podemos observar tres puntos en disposición vertical.
+- En la parte superior del programa, podemos observar tres puntos en disposición vertical.
 
 ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/navegacion.png "Creación de Nodo3D")
 
--  Al hacer clic sobre ellos, se despliega un menú que posee un botón que dice `Add Sun To Scene`, con el cual agregamos un sol. Hacemos clic en él.
+- Al hacer clic sobre ellos, se despliega un menú que posee un botón que dice `Add Sun To Scene`, con el cual agregamos un sol. Hacemos clic en él.
 
 ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/creacion-de-sol.png "Creacion de Sol")
 
--  Volvemos a hacer clic sobre los puntos y clic en el botón que dice: `Add environment To Scene`, agregando un ambiente.
+- Volvemos a hacer clic sobre los puntos y clic en el botón que dice: `Add environment To Scene`, agregando un ambiente.
 
-![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/entorno-de-escena.png)
+![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/entorno-de-escena.png "Creacion de entorno")
 
--  Con esto ya podemos reproducir nuestra escena ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/escena.png "Creacion de entorno") en el panel de la esquina superior derecha. O con la tecla F6. Le ponemos un nombre a la escena y la guardamos.
+- Con esto ya podemos reproducir nuestra escena ![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/escena.png) en el panel de la esquina superior derecha. O con la tecla F6. Le ponemos un nombre a la escena y la guardamos.
 
 ## MESH INSTANCE 3D
 
