@@ -20,8 +20,21 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 <Layout title={`Sobre ${tag}`}>
-  <p>Posts etiquetados con {tag}</p>
+  <p>Posts etiquetados con <span>{tag}</span></p>
   <ul>
     {posts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title}/>)}
   </ul>
 </Layout>
+
+<style>
+  p {
+    text-align: center;
+    font-size: 32px;
+    text-decoration:underline;
+    text-underline-offset: 4px  ;
+  }
+
+  span {
+    color: var(--rojo);
+  }
+</style>
