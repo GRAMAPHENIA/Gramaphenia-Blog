@@ -113,7 +113,7 @@ p {
 
 /* 🔴 🧩 ESTILOS DEL FOOTER 🧩 */
 
-/* .footer-container {
+.footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,7 +128,7 @@ footer {
   color: var(--dark);
   text-align: center;
   bottom: 0;
-} */
+}
 
 /* 🔴 🧩 CODE => TAGS 🧩 */
 
@@ -160,23 +160,26 @@ code {
 } */
 
 a {
-  color: var(--code-light);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--rojo);
-}
-
-a {
   color: var(--gris);
   text-decoration: none;
   padding: 0.3rem;
 }
 
 a:hover {
-  color: var(--code-dark);
+  color: var(--naranja);
   text-underline-offset: 0.2rem;
+}
+.dark a {
+  color: var(--parrafo-dark);
+  text-decoration: none;
+}
+.dark a:hover {
+  color: var(--rojo);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--rojo);
 }
 
 /* 🔴 🧩 CUSTOMS 🧩 */
@@ -222,8 +225,8 @@ html.dark {
 }
 
 /* 🔴 🧩 DARK ABOUT 🧩 🔴 */
- .dark .acerca-de{
-  font-weight:lighter;
+.dark .acerca-de {
+  font-weight: lighter;
 }
 .dark .menu .line {
   background: var(--ligth);
