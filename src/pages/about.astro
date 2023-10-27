@@ -15,34 +15,38 @@ const identity = {
 
 const skills = [
   "HTML",
-  "CSS",
-  "JavaScript",
-  "C#",
-  "GDSCRIPT",
-  "C++",
-  "React",
-  "Astro",
-  "Blender",
-  "Godot",
-  "Unity",
-  "UE5",
-  "Documentación",
+  // "CSS",
+  // "JavaScript",
+  // "C#",
+  // "GDSCRIPT",
+  // "C++",
+  // "React",
+  // "Astro",
+  // "Blender",
+  // "Godot",
+  // "Unity",
+  // "UE5",
+  // "Documentación",
 ];
 
 const generaltitle = [
-  "La necesidad de un HTML",
-  "La necesidad de un CSS",
-  "La necesidad de un JS",
-  "La necesidad de un C#",
-  "La necesidad de un GDSCRIPT",
-  "La necesidad de un C++",
-  "La necesidad de un React",
-  "La necesidad de un Astro",
-  "La necesidad de un Blender",
-  "La necesidad de un Godot",
-  "La necesidad de un Unity",
-  "La necesidad de un UE5",
-  "La necesidad de un Documentación",
+  "Lenguaje de etiquetas de hipertexto",
+  // "La necesidad de un CSS",
+  // "La necesidad de un JS",
+  // "La necesidad de un C#",
+  // "La necesidad de un GDSCRIPT",
+  // "La necesidad de un C++",
+  // "La necesidad de un React",
+  // "La necesidad de un Astro",
+  // "La necesidad de un Blender",
+  // "La necesidad de un Godot",
+  // "La necesidad de un Unity",
+  // "La necesidad de un UE5",
+  // "La necesidad de un Documentación",
+];
+
+const description = [
+  "<head>, <title>, <body>, <header>, <footer>, <article>, <section>, <p>, <div>, <span>, <img>, <aside>, <audio>, <canvas>, <datalist>, <details>, <embed>, <nav>, <output> (en-US), <progress>, <video>, <ul>, <ol>, <li>",
 ];
 ---
 
@@ -56,24 +60,6 @@ const generaltitle = [
       de nuestras existencias.
     </p>
 
-    <!-- <p>He aquí algunos datos sobre nosotros:</p>
-    <ul class="custom-li-about">
-      <li class="custom-li-about">
-        Nombramos {identity.firstName} nuestro hacer .
-      </li>
-      <li>
-        Vivimos en {identity.country} y trabajamos como {identity.occupation}.
-      </li>
-      <br />
-      {
-        identity.hobbies.length >= 2 && (
-          <li>
-            Dos de nuestras aficiones son: {identity.hobbies[0]} y{" "}
-            {identity.hobbies[2]}
-          </li>
-        )
-      }
-    </ul> -->
     <p class="paragraph">Nuestros estudios versan sobre:</p>
     <summary class="custom-list-about">Informacion</summary>
      Seccion dedicada a comentarios acerca de:
@@ -84,16 +70,7 @@ const generaltitle = [
           <details class="custom-list-about">
             <div>
               <h3>{generaltitle[index]}</h3>
-              <p>
-                Este es un párrafo para demostrar que es un párrafo de prueba.
-                Este es un párrafo para demostrar que es un párrafo de prueba.
-                Este es un párrafo para demostrar que es un párrafo de prueba.
-                Este es un párrafo para demostrar que es un párrafo de prueba.
-                Este es un párrafo para demostrar que es un párrafo de prueba.
-                Este es un párrafo para demostrar que es un párrafo de prueba.
-                Este es un párrafo para demostrar que es un párrafo de prueba.
-                Este es un párrafo para demostrar que es un párrafo de prueba.
-              </p>
+              <p>{description}</p>
             </div>
           </details>
         </summary>
@@ -131,7 +108,7 @@ const generaltitle = [
     padding: 1em;
     margin: 1em;
   }
-  
+
   /* 🔴 🧩 NO LLEGAN LAS VARIABLES NI EL MODO DARK 🧩 🔴 */
 
   /* .dark .acerca-de {
