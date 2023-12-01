@@ -38,7 +38,7 @@ tags: ["Video Games", "3D", "Godot"]
 
 - En la escena principal, agregamos un nuevo nodo. Este nodo lo podemos agregar haciendo clic en el icono `+` que se encuentra hacia la izquierda superior de nuestra pantalla. En el buscador del menú que nos aparece escribimos `meshin` y se nos da a elegir algunos tipos de nodo. Seleccionamos `MeshInstance3D` y damos crear.
 
-![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/meshin.png "Mesh instance 3D")
+![Imagen de motor gráfico para el desarrollo de videojuegos GODOT](/img-post-uno/meshin.png "Mesh instance 3D"){: style="border-radius: 6px;"}
 
 - Ahora podemos verlo dentro de la jerarquía de nuestra escena.
 
@@ -73,3 +73,17 @@ tags: ["Video Games", "3D", "Godot"]
 - En las propiedades del `MeshInstance3D` en el `Inspector`, podemos observar que en las propiedades en la sección de `Mesh`, dice `<empty>`, damos clic dentro y seleccionamos la opción `New CapsuleMesh`. Una vez creada la malla, en la parte superior del programa, podemos observar un icono cuadrado rojo que dice `Mesh`. Hacemos clic en él y seleccionamos `Crear collider conexo hermano`.
 
 - Una vez hecho esto, hacemos clic en el `nodo padre` `Player` y en el inspector buscamos la opción `Lock Rotation` y la activamos haciendo clic en el `checkbox`.
+
+## ESCRIBIENDO EL SCRIPT DE MOVIMIENTO
+
+- Comenzamos seleccionando el nodo `Player` click con el boton derecho de mouse y de las opciones vamos a seleccionar `añadir nuevo script` el cual guardamos `Player.gd`
+
+`COLOCAR IMAGEN`
+
+- Una vez escrita la primer parte del `script`
+
+`COLOCAR IMAGEN`
+
+- Hacemos click en `3D`, luego en el `File System` o `Sistema de Archivos` hacemos click derecho sobre `Player.tscn` y seleccionamos la opcion de `Instanciar`. Esto nos devuelve como resultado la incorporacion del `Player` a la escena principal.
+
+`COLOCAR IMAGEN`
